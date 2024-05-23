@@ -2,6 +2,7 @@
 
 import React, { useCallback, useRef, useState } from 'react';
 import Webcam from 'react-webcam';
+import { Prisma } from '@prisma/client/extension';
 
 const WebcamCapture = () => {
   const webcamRef = useRef<any>(null);
