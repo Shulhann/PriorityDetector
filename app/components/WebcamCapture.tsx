@@ -42,18 +42,27 @@ const WebcamCapture = () => {
       <Webcam
         audio={false}
         ref={webcamRef}
+        width={500}
         screenshotFormat="image/jpeg"
       />
       <div className='flex flex-col'>
-        <form className='flex flex-col mx-10 w-full'>
-            <label className='mb-2' htmlFor='textInputName'>Nama: </label>
-            <input type='text' value={nama} onChange={(e: React.ChangeEvent<HTMLInputElement>) => {setNama(e.target.value)}}className='form-control px-2 border border-gray-500 rounded mb-4' id='textInputName'/>
-            <label className='mb-2' htmlFor='textInputNIK'>NIK: </label>
-            <input type='text' value={nik} onChange={(e: React.ChangeEvent<HTMLInputElement>) => {setNik(e.target.value)}} className='form-control px-2 border border-gray-500 rounded mb-4' id='textInputNIK'/>
-            <label className='mb-2' htmlFor='textInputSuhu'>Suhu: </label>
-            <input disabled type='text' value={suhu} onChange={(e: React.ChangeEvent<HTMLInputElement>) => {setSuhu(e.target.value)}} className='form-control px-2 border border-gray-500 rounded mb-4' id='textInputSuhu'/>
-            <label className='mb-2' htmlFor='textInputStatus'>Status: </label>
-            <input disabled type='text' value={status} onChange={(e: React.ChangeEvent<HTMLInputElement>) => {setStatus(e.target.value)}} className='form-control px-2 border border-gray-500 rounded mb-4' id='textInputStatus'/>
+        <form className='flex flex-col mx-12 w-full'>
+          <div className='flex flex-row justify-between mb-6'>
+            <label className='' htmlFor='textInputName'>Nama: </label>
+            <input type='text' value={nama} onChange={(e: React.ChangeEvent<HTMLInputElement>) => {setNama(e.target.value)}}className='form-control px-2 border border-gray-500 rounded' id='textInputName'/>
+          </div>
+          <div className='flex flex-row justify-between mb-6'>
+            <label className='' htmlFor='textInputNIK'>NIK: </label>
+            <input type='text' value={nik} onChange={(e: React.ChangeEvent<HTMLInputElement>) => {setNik(e.target.value)}} className='form-control px-2 border border-gray-500 rounded' id='textInputNIK'/>
+          </div>
+          <div className='flex flex-row justify-between mb-6'>
+            <label className='' htmlFor='textInputSuhu'>Suhu: </label>
+            <input disabled type='text' value={suhu} onChange={(e: React.ChangeEvent<HTMLInputElement>) => {setSuhu(e.target.value)}} className='form-control px-2 border border-gray-500 rounded' id='textInputSuhu'/>
+          </div>
+          <div className='flex flex-row justify-between mb-6'>
+            <label className='' htmlFor='textInputStatus'>Status: </label>
+            <input disabled type='text' value={status} onChange={(e: React.ChangeEvent<HTMLInputElement>) => {setStatus(e.target.value)}} className='form-control px-2 border border-gray-500 rounded' id='textInputStatus'/>
+          </div>
             <div className='flex flex-col bg-[#EFDAD7] p-4 rounded-2xl'>
               <label className='mb-2' htmlFor='textInputAntrian'>Urutan Antrian: </label>
               <input disabled type='text' value={antrian} onChange={(e: React.ChangeEvent<HTMLInputElement>) => {setAntrian(e.target.value)}} className='form-control bg-[#EFDAD7] px-2 mb-4' id='textInputAntrian'/>
