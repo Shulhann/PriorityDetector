@@ -62,6 +62,7 @@ const WebcamCapture = () => {
               <button className="mt-4 bg-[#1572A1] text-white border rounded-2xl w-full h-8"onClick={capture}>Kirim</button>
               {/* <button className="mt-4 bg-blue-400 border rounded w-1/2 h-8"onClick={()=>{}}>Masuk Antrian</button> */}
             </div>
+            {/* <button className="mt-2 bg-[#1572A1] text-white border rounded-2xl w-full h-8"onClick={capture}>Kirim</button> */}
             
         </form>
       </div>
