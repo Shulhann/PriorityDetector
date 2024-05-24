@@ -1,0 +1,12 @@
+{
+    "predictions": [
+        {
+            "disease": "healthy",
+            "confidence": 0.698364794254303
+        },
+        {
+            "disease": "sick",
+            "confidence": 0.4566519260406494
+        }
+    ]
+}

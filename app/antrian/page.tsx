@@ -3,27 +3,29 @@
 import Image from "next/image";
 import { useState } from "react";
 
+export let priorityData = [{
+  id:1,
+  name: "I Dewa Made Manu Pradnyana",
+  queue: "PQ - 1"
+}]
+export let nonPriorityData = [{
+  id:1,
+  name: "Muhammad Shulhan",
+  queue: "GQ - 1"
+},
+{
+  id:2,
+  name: "Apis",
+  queue: "GQ - 2"
+}]
+
 export default function Home() {
 
-  const [currentPriorityQueue, setCurrentPriorityQueue] = useState('PQ - 001');
+  const [currentPriorityQueue, setCurrentPriorityQueue] = useState('PQ - 1');
   const [priorityLocation, setPriorityLocation] = useState('RD05');
   const [nonPriorityLocation, setNonPriorityLocation] = useState('ADM01');
-  const [currentNonPriorityQueue, setCurrentNonPriorityQueue] = useState('GQ - 001');
-  const priorityData = [{
-    id:1,
-    name: "I Dewa Made Manu Pradnyana",
-    queue: "PQ - 001"
-  }]
-  const nonPriorityData = [{
-    id:1,
-    name: "Muhammad Shulhan",
-    queue: "GQ - 001"
-  },
-  {
-    id:2,
-    name: "Apis",
-    queue: "GQ - 002"
-  }]
+  const [currentNonPriorityQueue, setCurrentNonPriorityQueue] = useState('GQ - 1');
+
   return (
       <section className="flex flex-row justify-center mt-5">
         <div className="flex flex-col mr-5">
