@@ -39,7 +39,7 @@ export default function RootLayout({
           {children}
         </main>
         
-        <footer className=" w-full flex justify-center absolute bottom-0">
+        <footer className=" w-full flex justify-center mt-2">
           <h1>
             @PriorityDetector TPK Rekayasa Sistem Multimedia
           </h1>
